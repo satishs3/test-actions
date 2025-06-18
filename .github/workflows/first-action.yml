@@ -17,14 +17,8 @@ jobs:
           ls -ltra
           cat README.md
 
-     - name: Install the library
-       run: sudo apt-get install cowsay
-
-     - name: Run cowsay command
-       run: cowsay -f dragon "I will snatch your chips" >> dragon.txt
-
-     - name: verify cowsay ASCII file
-       run: grep -i snatch dragon.txt
-
-     - name: print ASCII generated file
-       run: cat dragon.txt 
+     - name: Run the cowsay_utility shell script
+       run: |
+          chmod +x cowsay_utility.sh
+          ./cowsay_utility.sh
+       
