@@ -27,4 +27,4 @@ jobs:
        run: grep -i snatch dragon.txt
 
      - name: print ASCII generated file
-       run: echo dragon.txt 
+       run: cat dragon.txt 
