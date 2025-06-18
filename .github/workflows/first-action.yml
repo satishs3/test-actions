@@ -17,5 +17,14 @@ jobs:
           ls -ltra
           cat README.md
 
+     - name: Install the library
+       run: sudo apt-get install cowsay
+
      - name: Run cowsay command
-       run: cowsay -f monkey "I will snatch your chips"
+       run: cowsay -f monkey "I will snatch your chips" >> monkey.txt
+
+     - name: verify cowsay ASCII file
+       run: grep -i snatch monkey.txt
+
+     - name: print ASCII generated file
+       run: echo monkey.txt 
