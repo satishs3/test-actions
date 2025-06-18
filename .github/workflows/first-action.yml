@@ -21,10 +21,10 @@ jobs:
        run: sudo apt-get install cowsay
 
      - name: Run cowsay command
-       run: cowsay -f monkey "I will snatch your chips" >> monkey.txt
+       run: cowsay -f dragon "I will snatch your chips" >> dragon.txt
 
      - name: verify cowsay ASCII file
-       run: grep -i snatch monkey.txt
+       run: grep -i snatch dragon.txt
 
      - name: print ASCII generated file
-       run: echo monkey.txt 
+       run: echo dragon.txt 
