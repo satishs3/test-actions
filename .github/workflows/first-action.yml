@@ -11,9 +11,11 @@ jobs:
 
      - name: checkout
        uses: actions/checkout@v4
-       
-     - name: List files
-       run: ls
 
-     - name: read file
-       run: cat README.md
+     - name: List files and read file
+       run: |
+          ls -ltra
+          cat README.md
+
+     - name: Run cowsay command
+       run: cowsay -f monkey "I will snatch your chips"
