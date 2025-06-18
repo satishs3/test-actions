@@ -9,8 +9,11 @@ jobs:
      - name: welcome-msg
        run: echo "Welcome Satish"
 
+     - name: checkout
+       uses: actions/checkout@v4
+       
      - name: List files
        run: ls
-       
+
      - name: read file
        run: cat README.md
