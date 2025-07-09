@@ -1,7 +1,7 @@
 name: My First Workflow
-
 on: push
-
+env:
+  username: satish
 jobs:
   first-job:
      runs-on:  ubuntu-latest
